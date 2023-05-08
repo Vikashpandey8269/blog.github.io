@@ -1,6 +1,5 @@
 
-
-const new_form=document.querySelector("#newForm");
+  const new_form=document.querySelector("#newForm");
 const write_title = document.querySelector("#writeTitle");
 const write_des = document.querySelector("#writeDes");
 
@@ -97,4 +96,7 @@ const newprofile_img =document.createElement('div');
 
        
 })
+
+
+
 
