@@ -241,7 +241,7 @@ form .logIn{
     width: 300px;
     height: 40px;
    align-items: center;
-   margin-top: -20px;
+   margin-top: -10px;
 
 }
 .postTime1{
@@ -315,7 +315,7 @@ form .logIn{
 .newDiv a{
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: whitesmoke;
+    color: red;
    
 }
 
@@ -324,6 +324,26 @@ p{
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgba(0,0,0,.6) ;
+
+}
+
+.addtitle input{
+
+    width: 800px;
+    height: 50px;
+    background-color:whitesmoke;
+    margin-left: 300px;
+    border-radius: 10px;
+    border-radius: 2px solid rgb(4, 113, 113);
+
+}
+.addDescription  textarea {
+    width: 800px;
+    height: 400px;
+    background-color:whitesmoke;
+    margin-left: 300px;
+    border-radius: 10px;
+    border-radius: 6px solid rgb(4, 113, 113);
 
 }
 

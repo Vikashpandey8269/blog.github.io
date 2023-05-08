@@ -20,4 +20,4 @@ document.getElementsByClassName('homeBtn')[0].addEventListener('click',function(
    
 
 })
-/**create new post */
+/**login */

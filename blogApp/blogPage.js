@@ -19,12 +19,6 @@ fetch(image_url).then((responce) =>
     
 })
 
-
-
-
-
-
-
 /** function for title and dis */
 let url ="https://jsonplaceholder.typicode.com/posts?_limit=8";
 fetch(url).then(res =>{
@@ -44,7 +38,7 @@ const blog_tile = document.createElement('div');
        home_page.appendChild(blog_tile);
 
 const displayTitle = (data) => {
-    for(let i=0;i <8; i++){
+    for(let i=0;i <4; i++){
        /**console.log([i].title); */ 
      
        
@@ -58,7 +52,10 @@ const displayTitle = (data) => {
        const blog_img =document.createElement('div');
        blog_img.classList.add('blogImage');
        blog_page.appendChild(blog_img);
-       const image = document.createElement('img');
+
+       
+
+      const image = document.createElement('img');
        image.src='https://media.istockphoto.com/id/1383963898/photo/technology-icons-transfer-data-through-programming-codes.jpg?b=1&s=170667a&w=0&k=20&c=XGN9MqaC8YZ4vvH9b4MF-FBmgiDUyA1mr1fS4u1TKpQ=';
        blog_img.appendChild(image);
 
