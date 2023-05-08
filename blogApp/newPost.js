@@ -2,6 +2,7 @@
   const new_form=document.querySelector("#newForm");
 const write_title = document.querySelector("#writeTitle");
 const write_des = document.querySelector("#writeDes");
+const user_input = document.querySelector("#userName")
 
 
 new_form.addEventListener('submit',(e) =>{
@@ -11,6 +12,7 @@ new_form.addEventListener('submit',(e) =>{
        console.log(task);
        const task1 =write_des.value;
        console.log(task1);
+       const task3 =user_input.value;
 
        
 
@@ -80,7 +82,8 @@ const newprofile_img =document.createElement('div');
       use_name.classList.add('userName1');
       new_home.append(use_name);
     const use_h2 =document.createElement('h3');
-    use_h2.innerHTML="Vikash Pandey"
+    use_h2.innerText=task3;
+    console.log(task3);
     use_name.appendChild(use_h2);
 
     /**time */
@@ -94,8 +97,17 @@ const newprofile_img =document.createElement('div');
     tim_h3.innerHTML=`${CurrentTime}`;
     pos_time.appendChild(tim_h3);
 
+    
+    new_form.addEventListener('click',function(){
+      document.getElementsByClassName('creat')[0].style.display="none";
+      document.getElementsByClassName('home')[0].style.display="block";
+      document.getElementsByClassName('loginSection')[0].style.display="none";
+     
+  
+  })
        
 })
+
 
 
 

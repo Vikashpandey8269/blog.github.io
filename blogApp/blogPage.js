@@ -1,23 +1,8 @@
 const home_page = document.querySelector(".home");
+const user_inpu = document.querySelector("#userName")
 
-/** function for random images */
-let image_url ="https://jsonplaceholder.typicode.com/photos?_limit=10";
-fetch(image_url).then((responce) =>
-     responce.json())
-     .then(result =>{
-/** for geting url of image by map */
-        result.map((value) =>{
-            let key =value.url;
-           /* console.log(key); */
-           
-          
 
-           
-        })
-      
-    
-    
-})
+
 
 /** function for title and dis */
 let url ="https://jsonplaceholder.typicode.com/posts?_limit=8";
@@ -38,10 +23,13 @@ const blog_tile = document.createElement('div');
        home_page.appendChild(blog_tile);
 
 const displayTitle = (data) => {
+  const task4 =user_inpu.value;
     for(let i=0;i <4; i++){
        /**console.log([i].title); */ 
-     
        
+    
+     
+      
 
        
 
@@ -63,9 +51,38 @@ const displayTitle = (data) => {
        
        profile_img.classList.add('profile');
        blog_page.appendChild(profile_img);
-       const profile = document.createElement('img');
+
+       let image_url ="https://jsonplaceholder.typicode.com/photos?_limit=1";
+fetch(image_url).then((responce) =>
+     responce.json())
+     .then(result =>{
+/** for geting url of image by map */
+        result.map((value) =>{
+            let key =value.url;
+           /* console.log(key); */
+
+
+           const profile = document.createElement('img');
+           profile.src=`https://picsum.photos/100/100?random=${key}`;
+           profile_img.appendChild(profile);
+
+          
+
+           
+        })
+      
+    
+    
+})
+
+
+
+       
+ 
+
+       /*const profile = document.createElement('img');
        profile.src="https://i.pinimg.com/originals/24/4a/70/244a70a7916bf9b411deb294af95076c.jpg";
-      profile_img.appendChild(profile);
+      profile_img.appendChild(profile);*/
 
 
       /*title*/
@@ -89,7 +106,9 @@ const displayTitle = (data) => {
       user_name.classList.add('userName');
       blog_page.append(user_name);
     const user_h2 =document.createElement('h3');
-    user_h2.innerHTML="Vikash Pandey"
+ 
+    user_h2.innerHTML = "vikash pandey";
+   
     user_name.appendChild(user_h2);
 
     /**time */
@@ -108,3 +127,12 @@ const displayTitle = (data) => {
 
     }
 }
+
+
+document.getElementsByClassName('postBtn')[0].addEventListener('click',function(){
+  document.getElementsByClassName('creat')[0].style.display="block";
+  document.getElementsByClassName('home')[0].style.display="none";
+  document.getElementsByClassName('loginSection')[0].style.display="none";
+ 
+
+})
