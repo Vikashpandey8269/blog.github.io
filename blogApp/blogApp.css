@@ -7,10 +7,11 @@
 body{
     margin: 0px;
     padding: 0px;
+    width: 100%;
    
 }
 .loginSection{
-    width: 1550px;
+    width: 1530px;
    height: 700px;
     padding-top: 180px;
     background-color: rgb(166, 241, 241);
@@ -102,7 +103,7 @@ form .logIn{
     border: none;
     outline: none;
     font-weight: 700;
-    padding-top: 10px;
+  padding: 5px;
     padding-left: 70px;
     cursor: pointer;
 
@@ -120,10 +121,11 @@ form .logIn{
 }
 .navPost{
     width: 1550px;
-    height: auto;
+    height: 80px;
     background-color:rgba(245, 245, 245, 0.772);
     display: flex;
     align-items: center;
+    margin-bottom: 30px;
   
     
 }
@@ -131,6 +133,7 @@ form .logIn{
     margin-left: 550px;
     font-size: 50px;
     color: rgb(4, 113, 113);
+    padding: 10px;
     
     
 }
@@ -187,6 +190,7 @@ form .logIn{
     margin-left: 12px;
     margin-top: 10px;
     
+    
 }
  a{
     font-size: 20px;
@@ -197,6 +201,7 @@ form .logIn{
  
  p{
     margin-left: 12px;
+    margin-top: 15px;
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgba(0,0,0,.6) ;
@@ -273,8 +278,8 @@ form .logIn{
 
 .creat{
     display: none;
-    width: 1550px;
-    height: 800px;
+    width: 1530px;
+    height: 750px;
     background-color:rgb(166, 241, 241) ;
 
 }
@@ -336,7 +341,7 @@ p{
     border-radius: 10px;
     border: 3px solid rgb(4, 113, 113);
     padding: 10px;
-    margin-top: 100px;
+    margin-top: 50px;
 
 }
 .addDescription  textarea {
@@ -347,13 +352,16 @@ p{
     border: 3px solid rgb(4, 113, 113);
     border-radius: 8px ;
     outline: none;
-    padding-top: 10px;
+   padding: 20px;
+   font-size: 15px;
+   
+ 
 
 }
 .submit1 button{
    font-size: 20px;
    outline: none;
-   border: 3px solid rgb(4, 113, 113);
+  
    margin-left: 960px;
    padding: 10px;
    color:white ;
@@ -362,5 +370,10 @@ p{
   
 
   
+}
+.submit1 button:hover{
+    background-color:rgb(166, 241, 241) ;
+    color: red;
+
 }
 

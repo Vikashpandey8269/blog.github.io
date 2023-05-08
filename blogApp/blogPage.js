@@ -1,5 +1,6 @@
 const home_page = document.querySelector(".home");
-const user_inpu = document.querySelector("#userName")
+const user_inpu = document.querySelector("#userName");
+ var search = document.getElementById("userName").value;
 
 
 
@@ -53,10 +54,10 @@ const displayTitle = (data) => {
        blog_page.appendChild(profile_img);
 
        let image_url ="https://jsonplaceholder.typicode.com/photos?_limit=1";
-fetch(image_url).then((responce) =>
-     responce.json())
-     .then(result =>{
-/** for geting url of image by map */
+       fetch(image_url).then((responce) =>
+       responce.json())
+       .then(result =>{
+        /** for geting url of image by map */
         result.map((value) =>{
             let key =value.url;
            /* console.log(key); */
@@ -74,6 +75,7 @@ fetch(image_url).then((responce) =>
     
     
 })
+       
 
 
 
